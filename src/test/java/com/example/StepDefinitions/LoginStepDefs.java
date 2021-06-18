@@ -26,20 +26,8 @@ public class LoginStepDefs extends BaseClass {
         navigateToHome();
 
     }
-
-    @Given("^User enters (.*) and (.*)$")
-    public void userEntersUsernameAndPassword(String username, String password) {
-        LoginPage.enterUsername(username);
-        LoginPage.enterPassword(password);
-    }
-
-    @When("User clicks on submit button")
-    public void userClicksOnSubmitButton() {
-        LoginPage.clickSubmit();
-    }
-
-    @Then("User is displayed home page")
-    public void userIsDisplayedHomePage() {
-        LoginPage.verifyTitle("Digital Bank");
+    @Given("User opens login page")
+    public void userOpensLoginPage() {
+        LoginPage.navigateToLoginPage();
     }
 }

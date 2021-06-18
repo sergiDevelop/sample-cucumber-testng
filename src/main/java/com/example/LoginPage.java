@@ -27,4 +27,8 @@ public class LoginPage extends BaseClass{
         Assert.assertTrue(driver.getTitle().equals(title));
     }
 
+    public static void navigateToLoginPage(){
+        driver.navigate().to("http://tutorialsninja.com/demo/index.php?route=account/login");
+    }
+
 }
