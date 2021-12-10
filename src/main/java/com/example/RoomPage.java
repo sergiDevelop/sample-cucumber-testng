@@ -10,6 +10,7 @@ public class RoomPage extends BaseClass{
 
     public static String divRooms = "c-hotel-sheet-room";
 
+
     public static void numberRooms() {
 
         List<WebElement> allDivs = driver.findElements(By.className("divRooms"));
